@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 
+
+//this component controls the input form of the todo.
 export function TodoForm(props) {
     const [input, setInput] = useState(props.edit ? props.edit.value : '');
 

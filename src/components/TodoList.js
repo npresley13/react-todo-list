@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { TodoForm } from './TodoForm';
 import {Todo } from './Todo';
 
+//this componet controls the list of todos.
 export function TodoList() {
     const [todos, setTodos] = useState([]);
     
@@ -25,8 +26,6 @@ export function TodoList() {
 
         setTodos(removeArr);
     }
-
-    
 
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {

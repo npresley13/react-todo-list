@@ -3,6 +3,8 @@ import { TodoForm } from "./TodoForm";
 import {RiCloseCircleLine} from 'react-icons/ri'
 import {TiEdit} from 'react-icons/ti'
 
+
+//this component controls the individual todo.
 export function Todo({todos, completeTodo, removeTodo, updateTodo}) {
     const [edit, setEdit] = useState({
         id: null,
